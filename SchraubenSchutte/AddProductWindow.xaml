@@ -1,0 +1,28 @@
+﻿<Window x:Class="SchraubenSchuette.AddProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Produkt Hinzufügen" Height="350" Width="400">
+    <Grid>
+        <TextBlock Text="Artikelnummer" Margin="10,-1,10,0" VerticalAlignment="Top" Height="13" FontSize="8" RenderTransformOrigin="0.498,-0.09"/>
+        <TextBox Name="txtArtikelnummer" Margin="10,10,10,0" VerticalAlignment="Top" Text="{Binding Artikelnummer}" />
+        <TextBlock Text="Bezeichnung" Margin="10,28,10,0" VerticalAlignment="Top" Height="11" FontSize="8" RenderTransformOrigin="0.498,-0.09"/>
+        <TextBox Name="txtBezeichnung" Margin="10,40,10,0" VerticalAlignment="Top" Text="{Binding Bezeichnung}" />
+        <TextBlock Text="Anzahl" Margin="10,58,10,0" VerticalAlignment="Top" Height="11" FontSize="8" RenderTransformOrigin="0.498,-0.09"/>
+        <TextBox Name="txtAnzahl" Margin="10,70,10,0" VerticalAlignment="Top" Text="{Binding Anzahl}" />
+        <TextBlock Text="Material" Margin="10,88,10,0" VerticalAlignment="Top" Height="11" FontSize="8" RenderTransformOrigin="0.498,-0.09"/>
+        <TextBox Name="txtMaterial" Margin="10,100,10,0" VerticalAlignment="Top" Text="{Binding Material}" />
+        <TextBlock Text="Maße" Margin="10,118,10,0" VerticalAlignment="Top" Height="11" FontSize="8" RenderTransformOrigin="0.498,-0.09"/>
+        <TextBox Name="txtMaße" Margin="10,130,10,0" VerticalAlignment="Top" Text="{Binding Maße}" />
+        <TextBlock Text="Einkaufspreis" Margin="10,148,10,0" VerticalAlignment="Top" Height="11" FontSize="8" RenderTransformOrigin="0.498,-0.09"/>
+        <TextBox Name="txtEinkaufspreis" Margin="10,160,10,0" VerticalAlignment="Top" Text="{Binding Einkaufspreis}" />
+        <TextBlock Text="verkaufspreis" Margin="10,178,10,0" VerticalAlignment="Top" Height="11" FontSize="8" RenderTransformOrigin="0.498,-0.09"/>
+        <TextBox Name="txtVerkaufspreis" Margin="10,190,10,0" VerticalAlignment="Top" Text="{Binding Verkaufspreis}" />
+        <TextBlock Text="Lieferant" Margin="10,208,10,0" VerticalAlignment="Top" Height="11" FontSize="8" RenderTransformOrigin="0.498,-0.09"/>
+        <TextBox Name="txtLieferant" Margin="10,220,10,0" VerticalAlignment="Top" Text="{Binding Lieferant}" />
+        <Button Content="Bild auswählen" Margin="10,250,10,0" VerticalAlignment="Top" Click="BtnBildAuswaehlen_Click"/>
+        <TextBlock x:Name="lblBildPfad" Text="Kein Bild ausgewählt" Margin="10,280,10,0" TextWrapping="Wrap"/>
+        <Image x:Name="imgVorschau" Height="100" Margin="10,310,10,0"/>
+
+        <Button Name="BtnHinzufuegen" Content="Produkt Hinzufügen" Width="120" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,280,0,0" Click="BtnHinzufuegen_Click"/>
+    </Grid>
+</Window>
